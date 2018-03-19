@@ -5,6 +5,7 @@
     <Argument type="_6" original_type="_7" location="f1:1" file="f1" line="1"/>
     <Argument type="_6" original_type="_8" location="f1:1" file="f1" line="1"/>
     <Argument type="_9" original_type="_10" location="f1:1" file="f1" line="1"/>
+    <Argument type="_6" location="f1:1" file="f1" line="1"/>
   </Function>
   <FundamentalType id="_2" name="void" size="[0-9]+" align="[0-9]+"/>
   <PointerType id="_4" type="_11" size="[0-9]+" align="[0-9]+"/>
