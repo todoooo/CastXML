@@ -921,6 +921,14 @@ void ASTVisitor::AddDeclContextMembers(clang::DeclContext const* dc,
       continue;
     }
 
+    clang::AccessSpecifier visibility = d->getAccess();
+    if (visibility != clang::AS_none) {
+      if (Opts.ExcludedVisibility.find(visibility) != Opts.ExcludedVisibility.end()) {
+        //the visibility of this declaration is in the exclusion set
+        continue;
+      }
+    }
+
     //Skip system header files
     if (Opts.SkipSystemHeaderOutput)
     {
