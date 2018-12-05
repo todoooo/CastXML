@@ -316,9 +316,6 @@ int main(int argc_in, const char** argv_in)
         return 1;
       }
     }
-    else if (strcmp(argv[i], "-help") == 0 ||
-               strcmp(argv[i], "--help") == 0) {
-    }
     else if (strcmp(argv[i], "--castxml-exclude-by-visibility") == 0) {
       if ((i + 1) < argc) {
         std::string item;
